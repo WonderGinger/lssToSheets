@@ -267,7 +267,7 @@ def print_table(rows):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('lss', nargs='*', default='/mnt/c/Users/brand/Favorites/celeste/any%.lss', action='store', help='path to .lss file')
+    parser.add_argument('lss', nargs='*', action='store', help='path to .lss file')
     parser.add_argument('-pretty', action='store_true', help='pretty print the values')
     args = parser.parse_args()
 
